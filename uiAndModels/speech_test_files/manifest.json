@@ -1,0 +1,26 @@
+{
+  "authorized": [
+    "down/893705bb_nohash_0.wav",
+    "go/893705bb_nohash_8.wav",
+    "off/893705bb_nohash_6.wav",
+    "on/893705bb_nohash_13.wav",
+    "stop/893705bb_nohash_3.wav",
+    "up/893705bb_nohash_5.wav"
+  ],
+  "unauthorized": [
+    "down/234d6a48_nohash_1.wav",
+    "go/9fac5701_nohash_0.wav",
+    "off/e8d562ca_nohash_2.wav",
+    "on/32ad5b65_nohash_3.wav",
+    "stop/33903159_nohash_0.wav",
+    "up/e95c70e2_nohash_0.wav"
+  ],
+  "unknown": [
+    "bed/91b03183_nohash_0.wav",
+    "two/6f2f57c1_nohash_0.wav",
+    "nine/1970b130_nohash_1.wav",
+    "dog/b2ae3928_nohash_0.wav",
+    "learn/475b61f1_nohash_0.wav",
+    "no/ec989d6d_nohash_0.wav"
+  ]
+}

@@ -28,8 +28,8 @@ def extract_mfcc_from_array(y_arr, sr=16000, n_mfcc=16, n_fft=512, hop_length=16
         y_arr = np.pad(y_arr, (0, target_length - len(y_arr)))
     else:
         y_arr = y_arr[:target_length]
-
-    mfcc        = librosa.feature.mfcc(y=y_arr.astype(float), sr=sr, n_mfcc=n_mfcc,
+    y_preemph = librosa.effects.preemphasis(y_arr)
+    mfcc        = librosa.feature.mfcc(y=y_preemph.astype(float), sr=sr, n_mfcc=n_mfcc,
                                         n_fft=n_fft, hop_length=hop_length,
                                         win_length=win_length, window='hann')
     delta_mfcc  = librosa.feature.delta(mfcc)
